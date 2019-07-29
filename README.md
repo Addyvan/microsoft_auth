@@ -12,6 +12,8 @@ pip install python-dateutil==2.8.0
 
 # To run the app
 
+Replace `oauth_settings.example.yml` with `oauth_settings.yml` along with the proper settings. To get this app going you need to specify the client id, client secret and the correct redirect uri (defaulted to http://localhost:8000/microsoft_auth/callback).
+
 ```
 python manage.py migrate # init the db.sqlite3
 python manage.py runserver
