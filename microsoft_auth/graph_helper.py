@@ -23,3 +23,4 @@ def get_calendar_events(token):
   events = graph_client.get('{0}/me/events'.format(graph_url), params=query_params)
   # Return the JSON result
   return events.json()
+
